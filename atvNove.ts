@@ -6,10 +6,10 @@ console.clear();
 let teclado = require(`prompt-sync`)()
 let somaMaatriz: number= 0
 let matriz: number[][] = [];
-for (let i = 0; i < 3; i++){
+for (let i = 0; i < 6; i++){
 matriz[i] = new Array(3)
 
-for (let j = 0; j < 3; j++){
+for (let j = 0; j < 6; j++){
 let nome : number =parseInt(teclado (`digite um numero par que vai estar no endereço [${i},${j}]da matriz: `));
 
 matriz[i][j] = nome;
