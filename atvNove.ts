@@ -4,24 +4,24 @@
 
 console.clear();
 let teclado = require(`prompt-sync`)()
-
+let somaMaatriz: number= 0
 let matriz: number[][] = [];
 for (let i = 0; i < 3; i++){
 matriz[i] = new Array(3)
 
 for (let j = 0; j < 3; j++){
 let nome : number =parseInt(teclado (`digite um numero par que vai estar no endereço [${i},${j}]da matriz: `));
-if (nome%2==0){
-matriz[i][j] = nome;
-}else{
-    console.log(`apenas numeros pares!`)
-    j--}
 
+matriz[i][j] = nome;
+if(j%2==0){
+somaMaatriz+=nome
+
+}
 } 
 
 }
 console.clear();
-
+console.log(`a soma é :${somaMaatriz}`)
 console.log(matriz);
 
 
