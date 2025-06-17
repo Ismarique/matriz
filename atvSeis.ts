@@ -11,7 +11,7 @@ matrizdois[i] = new Array(3)
 
 for (let j = 0; j < 3; j++){
 let nome : number = parseInt(teclado (`digite o nome que vai estar no endereço [${i},${j}]da matriz(menores que nove): `));
-if(nome <= 9){
+if(nome <= 9 && nome>=0){
     matrizdois[i][j] = nome;
 }else{
     j--
